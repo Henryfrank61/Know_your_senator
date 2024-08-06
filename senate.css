@@ -162,45 +162,71 @@ main{
     margin-left: 15%;
       
   }
-  button {
-    width: 120px;
-    padding: 20px;
-    font-size: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
-}
-.twenty {
-  background: #8eb99d3f;
-  color: #0b0c0b;
-  border: 2px solid #f3f1f1;
-  border-radius: 40px;
-  text-transform: uppercase;
-  padding-left: 0;
-  padding-right: 0;
-}
+  .posts {
+    margin:60px auto;
+    border:1px solid #dfdfdf;
+    background:#ebf5e95e;
+    max-width:70%;
+    padding:40px;
+    line-height:2.5em;
+    text-align:justify;
+    border-radius:8px;
+  }
+  .posts h1 {
+    text-align:center
+  }
+  
+  .style-4 {
+    background:none;
+    color:#fff;
+    font: 13px Montserrat;
+    text-transform:uppercase;
+    padding:11px;
+    font-weight:600;
+    max-width:250px;
+    display:block;
+    text-align:center;  
+    margin:10px auto;
+    position:relative;
+    -moz-transform: skewX(-6deg);
+    -webkit-transform: skewX(-6deg);
+    -o-transform: skewX(-6deg);
+    -ms-transform: skewX(-6deg);
+    transform: skewX(-6deg);
+    box-shadow:inset -150px 0 0 0 #ccccff, inset 150px 0 0 0 #ccccff; /* set the 150 for maximum width division */
+    -webkit-transition: box-shadow 0.5s ease-out;
+    -moz-transition: box-shadow 0.5s ease-out;
+    -ms-transition: box-shadow 0.5s ease-out;
+    -o-transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out;
+  }
+  .style-4:hover {
+    -webkit-transition: box-shadow 0.5s ease-out;
+    -moz-transition: box-shadow 0.5s ease-out;
+    -ms-transition: box-shadow 0.5s ease-out;
+    -o-transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out;
+    box-shadow:inset 150px 0 0 0 #2d4438, inset -150px 0 0 0 #191a19; /* set the 150 for maximum width division */
+    color:#fff;
+  }  
 
-.twenty span {
-  position: relative;
-  position: 400ms;
-}
-
-.twenty span::after {
-  content: '\203A';
-  position: absolute;
-  opacity: 0;
-  right: -10px;
-  transition: 400ms ease-out 100ms;
-}
-
-.twenty:hover span::after {
-  opacity: 1;
-  right: -20px;
-}
-
-   .yes{
-    text-align: center; 
+  .know{
+    background-color: rgb(8, 47, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    font-family: system-ui;
+    margin-bottom:  50px;
+    
   } 
+  .know h1{
+    padding-right: 20px;
+  }
+
+   /* .yes{
+    text-align: center; 
+    
   #select{
     padding:5px;
     text-align: center;
@@ -241,6 +267,8 @@ main{
     width:auto;
 }
 
+
+
 .eleven:hover {
     background: #181716;
     box-shadow: 0 0px 0px #777777, inset 0 0 10px #777777;
@@ -252,6 +280,82 @@ main{
 
 .svg-inline--fa {
   vertical-align: -0.200em;
+} */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 0px;
+    text-align:inherit;
+    font: inherit;
+    color: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: white;
+}
+
+
+nav > button {
+  gap: 1rem;
+  position: relative;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-content: center;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.25rem;
+}
+
+nav > button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgb(3, 105, 161);
+  border-radius: 9999px;
+  transition: all 0.3s;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+}
+
+nav > button:hover::before {
+  inset: 35% -0.5rem 35% -0.5rem;
+  background-color: rgb(3, 105, 161);
+}
+nav > button::after {
+  content: attr(title);
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s  150ms,translate 0.3s  150ms;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+  font-size: 0.9rem;
+  text-wrap: nowrap;
+  opacity: 0;
+  translate: 0 10px;
+}
+nav > button:hover::after {
+  opacity: 1;
+  translate: 0;
+}
+
+nav > button > svg {
+  width: 3rem;
+  color: rgb(226, 232, 240);
 }
 
 .rounded-social-buttons {

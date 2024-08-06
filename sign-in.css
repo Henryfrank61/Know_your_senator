@@ -2,11 +2,11 @@
     box-sizing: border-box;
   }
   body {
+    background-color: rgba(39, 37, 37, 0.171);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(https://i.postimg.cc/nV7VBMYW/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     padding: 0%;
@@ -15,7 +15,7 @@
   border: 0;
   padding: 0;
   background: transparent;
-  color: inherit;
+  color:white;
   font-family: inherit;
   cursor: pointer;
   font-size: 16px;
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0f490a;
+  background: #133b10;
   color: #f9f9f9;
   font-family: "Cambria";
 }
@@ -141,7 +141,7 @@ body.open .navigation-menu__labels {
   .wrapper{
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .1);
+    border: 2px solid rgba(17, 16, 16, 0.274);
     backdrop-filter: blur(10px);
     color: #fff;
     border-radius: 10px;
@@ -169,12 +169,12 @@ body.open .navigation-menu__labels {
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #0a0a0a;
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder{
-    color: #fff;
+    color:#000
 }
 
 .input-box box-icon{
@@ -227,7 +227,7 @@ body.open .navigation-menu__labels {
 }
 
 .register-link p a{
-    color: #fff;
+    color: #1c500cbe;
     text-decoration: none;
     font-weight: 600;
 }
@@ -235,6 +235,7 @@ body.open .navigation-menu__labels {
 .register-link p a:hover{
     text-decoration: underline;
 }
+
 .footer{
     position: fixed;
     left: 0;
