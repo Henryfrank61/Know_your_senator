@@ -28,20 +28,4 @@ const toggleMenuClicked = () => {
     return true;
   }
 
-  let slideIndex = 0;
-showSlides();
-
-// Next-previous control
-function nextSlide() {
-  slideIndex++;
-  showSlides();
-  timer = _timer; // reset timer
-}
-
-function prevSlide() {
-  slideIndex--;
-  showSlides();
-  timer = _timer;
-}
-
-// Thumbnail image controlls
+ 

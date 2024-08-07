@@ -3,7 +3,9 @@
     box-sizing: border-box;
   }
   body {
-    background-color: rgba(39, 37, 37, 0.171);
+    background-image:url("Screenshot (7).png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,10 +150,11 @@ label{
 }
 select{
     display: block;
+    height: 30px;
     position: relative;
     width: 220px;
     margin-bottom: 5px;
-    border: solid 3px #b6890d;
+    border: solid 3px #5a4734d0;
     border-radius: 200px;
 }
 

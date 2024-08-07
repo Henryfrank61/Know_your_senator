@@ -24,10 +24,18 @@
           <a href="blog.html"><button type="button">Blog/News</button></a>
           <a href="Sign_up_pg.html"><button type="button">Sign Up</button></a>
           <a href="sign-in.html"><button type="button">Log In</button></a>
-          <button type="button">About Us</button> 
+          <a href="postblogpg.html"><button type="button">Report</button></a>
+          <a href="About-us.html"><button type="button">About Us</button></a>
         </section>
       </nav>
       <script type="text/javascript" src="./senate.js"></script>
+
+      <script>
+  function resetForm(){
+    $("#image_preview").html("");
+    return true;
+  }
+      </script>
 
       <div>
         <form>
@@ -42,22 +50,21 @@
         <p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"><label for="contact_nom">NAME</label></p>
         <p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
         <p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">SUBJECT</label></p>
-        <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
-        <p class="submit_wrapper"><input type="submit" value="Submit"></p>     
+        <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>   
+        <div class="my-2">
+                  <input type="file" class="form-control" id="images" name="images[]" onchange="preview_images();" multiple/>
+                </div>  
+        <div>
+                  <input onclick="upload_files()" type="button" class="btn btn-primary" name='submit_image' value="Upload Multiple Image"/>
+                  <input onclick="return resetForm();" type="reset" class="btn btn-danger" name='reset_images' value="Reset"/>
+              </div>
+       <p class="submit_wrapper"><input type="submit" value="Submit"></p>           
       </form>
   </article>
 </section>
         
         <div class="container">
             <div class="row">
-              
-                <div class="my-2">
-                  <input type="file" class="form-control" id="images" name="images[]" onchange="preview_images();" multiple/>
-                </div>
-                <div>
-                  <input onclick="upload_files()" type="button" class="btn btn-primary" name='submit_image' value="Upload Multiple Image"/>
-                  <input onclick="return resetForm();" type="reset" class="btn btn-danger" name='reset_images' value="Reset"/>
-                </div>
               </form>
             </div>
             <hr>
