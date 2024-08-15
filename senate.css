@@ -111,7 +111,7 @@ body {
 
 }
 #top_left1{
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slidein;
   position: relative;
   top: 15%;
@@ -129,7 +129,7 @@ body {
   }
 }
 #top_left2{
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein;
   position: relative;
   top: 20%;  
@@ -220,63 +220,6 @@ body {
     
   }
 
-   /* .yes{
-    text-align: center; 
-    
-  #select{
-    padding:5px;
-    text-align: center;
-    padding-left: 15px;
-    max-width: 100%;
-    display: block;
-  }
-  #h2{
-    color: #028d38;
-    border-radius: 25px;
-    background-color: beige;
-    padding: 15px;
-    text-align: center;
-    position: relative;
-    max-width: 100%;
-  }
-
-  #state{
-    
-    text-align: center; 
-    width: 220px;
-    height:20px;
-    max-width: 100%;
-    border-radius: 20px;
-    vertical-align:bottom;
-    position: relative;
-
-  }
-
-  .eleven {
-    background: #028d38;
-    color: #f1f1ed;
-    border-radius: 100px;
-    box-shadow: 0 3px 5px #777777, inset 0 0 0px #777777;
-    transition: transform 200ms;
-    margin-top: 20px;
-    padding: -35px;
-    width:auto;
-}
-
-
-
-.eleven:hover {
-    background: #181716;
-    box-shadow: 0 0px 0px #777777, inset 0 0 10px #777777;
-}
-
-.eleven:active {
-    transform: scale(0.98);
-}
-
-.svg-inline--fa {
-  vertical-align: -0.200em;
-} */
 
 button,
 [type="button"],
@@ -328,7 +271,7 @@ nav > button::before {
 }
 
 nav > button:hover::before {
-  inset: 35% -0.5rem 35% -0.5rem;
+  inset: 40% -2.5rem 35% -2.5rem;
   background-color: rgb(3, 105, 161);
 }
 nav > button::after {
