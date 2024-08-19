@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="senate.css">
     <script src="senate.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Home</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                     <input type="checkbox" id="nav-check">
                     <div class="nav-header">
                       <div class="nav-title">
-                       <img src="LOGO.jpeg" alt="senatelogo" width="110px" height="70px">
+                       <img src="LOGO.jpeg" alt="senatelogo" width="110px" height="70px" style="margin-bottom:40px;">
                        </div>  
                     </div>   
                    
@@ -33,6 +33,7 @@
                       <a href="Sign_up_pg.html">Sign Up</a> 
                       <a href="sign-in.html">LogIn</a>
                       <a href="postblogpg.html">Report</a>
+                      <a href="volunteer.html">Volunteer</a>
                       <a href="About-us.html">About Us</a>
                       
                     </div> 
@@ -43,32 +44,122 @@
                     <div class="container">
                       
                       <h2 id="top_left1">Who we are</h2>
-                      <h3 id="top_left2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vero repellat esse maiores, architecto harum modi similique nobis laudantium delectus error. Nemo, quidem ducimus suscipit sint ullam eligendi aperiam culpa.</h3>  
+                      <h3 id="top_left2">We are a group of concerned Nigerians dedicated to establishing a platform where our political representatives genuinely reflect our interests.</h3>  
                     </div>
 
 
                     <div class="posts">
-                        <h1>Our aim and objective</h1>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illum autem natus illo error itaque quidem quasi aperiam aspernatur unde? Quasi voluptas consequatur perspiciatis ullam voluptatum magni impedit dolorem porro.</h3>
-                        <a href="#" class="style-4">Read More</a>
+                        <h1>Our Vision</h1>
+                        <h3>This site is designed to provide all Nigerians with the political education and knowledge they need to become active participants in the Nigerian democratic process, where political representatives are held accountable by the citizens of their various constituencies. </h3>
+                        <a href="About-us.html" class="style-4">Read More</a>
                     </div>
+                    
       
-                    <div class="know">
+                    <!-- <div class="know">
                         <h1>Know your Legslatures:</h1>
-                           <nav>
+                           <nav> -->
     
-                          <button type="button" onclick="location.href='subsenate.html';"  title="Senate">
+                          <!-- <button type="button" onclick="location.href='subsenate.html';"  title="Senate">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
                             <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
                             <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                           </svg>
-                        </button>
+                        </button> -->
                      
+                        <div class="slider-container">
+                          <div class="left-slide">
+                            <div style="background-color: #7f7856;">
+                              <h2>Report things happening around you</h2>
+                              <a href="postblogpg.html">Click here</a>
+                            </div>
+                            <div style="background-color: #6d6b9f;">
+                              <h3>Volunteers Needed</h3>
+                              <p>We have the power to transform Nigeria into a country that works for all its citizens - regardless of whether they are from the North, South, East, or West! Together, through collaboration and unity, we can achieve this goal. Our mission is to join forces and ensure our representatives are held accountable by communicating our expectations to them.</p>
+                              <a href="volunteer.html">Click here to Volunteer</a> 
+                            </div>
+                            <div style="background-color: #252e33;">
+                              <h2>Know your house of representatives</h2>
+                              <a href="HOR.html">Click here</a> 
+                            </div>
+                            <div style="background-color: #739c10;">
+                              <h1>Know your senators</h1>
+                              <a href="subsenate.html">Click here</a> 
+                            </div>
+                          </div>
+                          <div class="right-slide">
+                            <div style="background: url('Screenshot\ \(7\).png')">
                         
+                            </div>
+                            <div style="background: url('reps2.jpg')">
+                        
+                            </div>
+                            <div style="background: url('LOGO.jpeg')">
+                        
+                            </div>
+                            <div style="background: url('report.jpg')">
+                        
+                            </div>
+                          </div>
+                          <div class="action-buttons">
+                            <button class="up-button">
+                              <i class="fa-solid fa-arrow-up"></i>
+                            </button>
+                            <button class="down-button">
+                              <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                          </div>
+                        </div>
 
-                        <button type="button"  onclick="location.href='HOR.html';" title="House of representatives."">
+                      <script>
+                        const sliderContainer = document.querySelector(".slider-container");
+const slidesLeft = document.querySelector(".left-slide");
+const slidesRight = document.querySelector(".right-slide");
+const upButton = document.querySelector(".up-button");
+const downButton = document.querySelector(".down-button");
+
+// Calculate the total number of slides
+const slidesLength = slidesRight.querySelectorAll("div").length;
+
+// Initialize the active slide index
+let activeSlidesIndex = 0;
+
+// Set initial position for left slides
+slidesLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
+
+// Add click event listeners to up and down buttons
+upButton.addEventListener("click", () => changeSlide("up"));
+downButton.addEventListener("click", () => changeSlide("down"));
+
+// Function to change the active slide
+const changeSlide = (direction) => {
+  const sliderHeight = sliderContainer.clientHeight;
+  if (direction === "up") {
+    activeSlidesIndex++;
+    if (activeSlidesIndex > slidesLength - 1) {
+      activeSlidesIndex = 0;
+    }
+  } else if (direction === "down") {
+    activeSlidesIndex--;
+    if (activeSlidesIndex < 0) {
+      activeSlidesIndex = slidesLength - 1;
+    }
+  }
+
+  // Update the transform property to change the slide position
+  slidesRight.style.transform = `translateY(-${
+    activeSlidesIndex * sliderHeight
+  }px)`;
+  slidesLeft.style.transform = `translateY(${
+    activeSlidesIndex * sliderHeight
+  }px)`;
+};
+
+                      </script>
+                  
+
+                        <!-- <button type="button"  onclick="location.href='HOR.html';" title="House of representatives."">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M13 5h8" />
@@ -79,7 +170,7 @@
                             <path d="M3 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
                           </svg>
                         </button>
-                      
+                       -->
                       </nav>
                     </div>
                         
@@ -104,7 +195,7 @@
                             <li><a href="https://codepen.io/sanketbodke"><i class="fab fa-whatsapp" target="blank"></i></a></li>
                         </ul>
                       </div>
-                      <p>Website copyright &#169; 2024</p> 
+                      <p> Copyright &#169; ProbeNaija 2024</p> 
               </footer> 
                 
 

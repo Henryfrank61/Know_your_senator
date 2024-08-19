@@ -140,8 +140,6 @@ body.open .navigation-menu__labels {
 .navigation-menu__labels > button.active {
   color: inherit;
 }
-
-
 main{
   margin: auto;
   display: flex;

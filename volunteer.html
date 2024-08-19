@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="volunteer.css">
+    <script type="text/javascript" src="./senate.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cambria:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Volunteer page</title>
+</head>
+<body>
+    <nav class="navigation-menu">
+        <div class="navigation-menu__overlay" onclick="toggleMenuClicked()"></div>
+        <button type="button" class="hamburger-menu" onclick="toggleMenuClicked()">
+          <span class="material-icons" id="open-icon">menu</span>
+          <span class="material-icons" id="close-icon">close</span>
+        </button>
+        <img class="site-identity-logo" src="LOGO.jpeg" alt="senatelogo" width="110px" height="60px">
+        <section class="navigation-menu__labels">
+          <a href="senate.html">Home</a>
+          <a href="blog.html"><button type="button">Blog/News</button></a>
+          <a href="Sign_up_pg.html"><button type="button">Sign Up</button></a>
+          <a href="sign-in.html"><button type="button">Log In</button></a>
+          <a href="postblogpg.html"><button type="button">Report</button></a>
+          <a href="About-us.html"><button type="button">About Us</button></a>
+        </section>
+      </nav>      
+    <main>
+        <div>
+            <div id="intro">
+            <h1>Volunteers Needed</h1>
+            <h2>We have the power to transform Nigeria into a country that works for all its citizens - regardless of whether they are from the North, South, East, or West! Together, through collaboration and unity, we can achieve this goal. Our mission is to join forces and ensure our representatives are held accountable by communicating our expectations to them.</h2> <br>
+            </div>
+            <h3>If you are interested in volunteering to contribute to this cause and create a brighter future, <br>please complete the form below. Select up to two fields you are willing and capable of volunteering in, and we will be in touch with you shortly to discuss further.</h3>
+        </div>
+        <div>
+            <form>
+                <div class="volun">
+                    <h2>Volunteer as:</h2>
+                <input type="checkbox" id="lawyer" name="lawyer" value="law">
+                <label for="vehicle1"> Lawyer</label>
+                <input type="checkbox" id="Motivational Speaker" name="Motivational Speaker" value="speaker">
+                <label for="Motivational Speaker"> Motivational Speaker</label>
+                <input type="checkbox" id="technician" name="technician" value="technician">
+                <label for="technician">IT technician</label>
+                <input type="checkbox" id="sm" name="sm" value="sm">
+                <label for="vehicle1">Social Media influencer</label>
+                <input type="checkbox" id="VE" name="VE" value="VE">
+                <label for="Motivational Speaker"> Video editor</label>
+                <input type="checkbox" id="CW" name="CW" value="CW">
+                <label for="technician">Creative writer</label>
+                <input type="checkbox" id="wm" name="wm" value="wm">
+                <label for="technician">Website managers/administrator</label>
+                <input type="checkbox" id="localcontactperson" name="localcontactperson" value="localcontactperson">
+                <label for="vehicle1">Local Contact persons (needed in all senatorial districts and federal constituencies)</label>
+                </div>
+        
+                <h2>Volunteer Form</h2>    
+                <div class="volnform">
+                    <input type="text" name="txt" placeholder="First Name" required="" ><br>
+                    <input type="text" name="text" placeholder="Last name" id="email" required="" ><br>                                              
+                    <input type="text" name="text" placeholder="Town" id="password" required="" > <br>
+                    <input type="text" name="text" placeholder="Local Government Area" required=""> <br>
+                    <input type="text" name="email" placeholder="State" id="email" required="" > <br>                                          
+                    <input type="text" name="text" placeholder="Senatorial district" id="password" required="" ><br>   
+                    <input type="text" name="text" placeholder="Federal constituency" required=""><br>
+                    <input type="email" name="email" placeholder="email" id="email" required=""> <br>                                       
+                    <input type="number" name="num" placeholder="phone number" id="phonenumber" required="" >   
+                </div>         
+                <button class="btn2">Submit</button> 
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p> Copyright &#169; ProbeNaija 2024</p> 
+    </footer>
+</body>
+</html>
