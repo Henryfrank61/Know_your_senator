@@ -140,7 +140,7 @@
   }
 
   #intro{
-    background-color: rgba(104, 109, 102, 0.664);
+    background-color: rgba(88, 104, 82, 0.712);
   }
   #intro h1{
     color:aliceblue
@@ -165,18 +165,17 @@
 .volnform input{
     align-items: center;
     text-align: center;
-    padding: 5%;
-    width: 40%;
-    height: 50%;
-    background:#cfcece5e;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    background:#2c9c445e;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
+    border: 2px solid rgba(175, 166, 166, 0.219);
+    display:inline-block;
+    border-radius: 10px;
     font-size: 16px;
-    color: #0a0a0a;
-    padding: 20px 45px 20px 20px;
-
+    color: #524e4ed8;
 }
 .volun{
     text-align: center;  
