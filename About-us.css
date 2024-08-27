@@ -555,26 +555,7 @@
       font-size: 1.5rem;
     }
   }
-  
 
- /* .abtus{
-  margin-top: 10%;
-}
-.abtus h2{
-  text-align:center;
-  padding: 0;
-}
-.abtus h2 h3{
-  font:300 ;
-}
-#head{
-  text-align: center;
-  font-size:xx-large;
-  font-weight: bold;
-}
-.vision{
-  margin-bottom: 50px;
-}  */
   .footer{
     position: fixed;
     left: 0;
@@ -583,5 +564,5 @@
     background-color: rgb(15, 14, 14);
     color: white;
     text-align: center;
-z-index: 2;
+    z-index: 2;
   }

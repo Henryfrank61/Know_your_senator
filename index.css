@@ -206,101 +206,6 @@ body {
     color:#fff;
   }  
 
-  /* .know{
-    background-image:url("Screenshot (7).png");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    font-family: system-ui;
-    margin:0;
-    margin-bottom: 200px;
-    
-  } 
-  .know h1{
-    padding-right: 20px;
-    
-  } */
-
-
-
-/* button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-bottom: 0px;
-    text-align:inherit;
-    font: inherit;
-    color: inherit;
-    line-height: inherit;
-    cursor: pointer;
-}
-
-
-nav {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  color: white;
-}
-
-
-nav > button {
-  gap: 1rem;
-  position: relative;
-  cursor: pointer;
-  aspect-ratio: 1 / 1;
-  display: grid;
-  place-content: center;
-  width: 5rem;
-  height: 5rem;
-  padding: 0.25rem;
-}
-
-nav > button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 2px solid rgb(3, 105, 161);
-  border-radius: 9999px;
-  transition: all 0.3s;
-  z-index: 10;
-  display: grid;
-  place-content: center;
-}
-
-nav > button:hover::before {
-  inset: 40% -2.5rem 35% -2.5rem;
-  background-color: rgb(3, 105, 161);
-}
-nav > button::after {
-  content: attr(title);
-  position: absolute;
-  inset: 0;
-  transition: opacity 0.3s  150ms,translate 0.3s  150ms;
-  z-index: 10;
-  display: grid;
-  place-content: center;
-  font-size: 0.9rem;
-  text-wrap: nowrap;
-  opacity: 0;
-  translate: 0 10px;
-}
-nav > button:hover::after {
-  opacity: 1;
-  translate: 0;
-}
-
-nav > button > svg {
-  width: 3rem;
-  color: rgb(226, 232, 240);
-} */
 
 .slider-container {
   margin-top:50px;
@@ -452,10 +357,10 @@ button {
   background-color: #E4405F;
 }
 .social-menu ul li:nth-child(3) a:hover{
-  background-color: #0077b5;
+  background-color: #0e0d0d;
 }
 .social-menu ul li:nth-child(4) a:hover{
-  background-color: #0a8d0a;
+  background-color: #c93232;
 }
 
 /* .rounded-social-buttons {
